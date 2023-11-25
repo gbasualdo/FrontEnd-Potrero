@@ -180,6 +180,7 @@ img, video, iframe {
     display: flex; 
     flex-direction: row;
     justify-content: center;
+}
 
 @media( max-width: 450px)
 {
@@ -210,4 +211,5 @@ img, video, iframe {
   .footer {
         height: 100px;  
     }
+
 }
