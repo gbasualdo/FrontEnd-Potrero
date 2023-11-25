@@ -17,7 +17,9 @@
 </head> 
 <body>
     <header class="header">
-               <img class="header__logo" src="Images/MIA.svg" alt="Inter Miami CF" height="200" width="200"> 
+        
+            <img id="Logo" class="header__logo" src="Images/MIA.svg" alt="Inter Miami CF" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+            
             <h1 class="header__titulo">Inter Miami</h1>
             <p class="header__descripcion">Somos Inter de Miami C F y el sur de Florida es nuetro Hogar</p>
     </header>
@@ -53,6 +55,21 @@
         <img src="/Images/MLS.png">
         
     </footer>
+
+    <script>
+        function cambiarImagen() {
+          document.getElementById("Logo").src = "Images/messi-miami.png";
+        }
+    
+        function restaurarImagen() {
+          document.getElementById("Logo").src = "Images/MIA.svg";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="JS/confetti.js"></script>
+
+
 </body>
 </html>   
 
