@@ -19,9 +19,9 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="Images/MIA.svg" alt="Inter Miami CF" height="200" width="200"> 
-     <h1 class="header__titulo">Inter Miami</h1>
-     <p class="header__descripcion">Somos Inter de Miami C F y el sur de Florida es nuetro Hogar</p>
+        <img id="Logo" class="header__logo" src="Images/MIA.svg" alt="Inter Miami CF" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+        <h1 class="header__titulo">Inter Miami</h1>
+        <p class="header__descripcion">Somos Inter de Miami C F y el sur de Florida es nuetro Hogar</p>
      
     </header>
     <main class="main">
@@ -67,6 +67,18 @@
         <img src="/Images/MLS.png" alt="Logo Oficial de la MLS">
         
     </footer>
+
+    <script>
+        function cambiarImagen() {
+          document.getElementById("Logo").src = "Images/messi-miami.png";
+        }
+    
+        function restaurarImagen() {
+          document.getElementById("Logo").src = "Images/MIA.svg";
+        }
+    </script>
+
+
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js"></script>
     <!-- Hoja de javascript - Bootstrap -->
